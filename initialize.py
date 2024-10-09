@@ -1,6 +1,7 @@
 # program to capture single image from webcam in python
 
 # importing OpenCV
+import time
 import cv2
 from json import dump
 from os import system
@@ -38,7 +39,7 @@ gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Load the CascadeClassifier
 face_classifier = cv2.CascadeClassifier(
-        cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+        cv2.data.haarcascades + "haarcascade_frontalface_extended.xml"
 )
 
 face = face_classifier.detectMultiScale(
