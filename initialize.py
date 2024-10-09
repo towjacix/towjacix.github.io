@@ -69,5 +69,5 @@ with open("students.json", "w") as f:
     dump(data, f, indent=4)
 
 # Cleanup
-system("rm -r ~/Documents/image-capture/pic.png")
-system("rm -r ~/Documents/image-capture/temp.png")
+system("rm -r ~/Documents/towjacix.github.io/pic.png")
+system("rm -r ~/Documents/towjacix.github.io/temp.png")
