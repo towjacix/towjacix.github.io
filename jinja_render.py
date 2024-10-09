@@ -14,8 +14,8 @@ def get_template_sample():
 
 
 def save_report(html_content):
-    with open("report.html", 'w', encoding='UTF-8') as file:
-        system("mkdir -p html-output && cd html-output")
+    with open("index.html", 'w', encoding='UTF-8') as file:
+        system("mkdir -p towjacix.github.io && cd towjacix.github.io")
         file.write(html_content)
 
 
@@ -25,7 +25,7 @@ def build_report():
     jinja2_template = Template(html_template)
     html_content = jinja2_template.render(**input_data)
     save_report(html_content)
-    print("create `report.html` success!")
+    print("create `index.html` success!")
 
 
 if __name__ == "__main__":
