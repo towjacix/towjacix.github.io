@@ -39,7 +39,7 @@ gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Load the CascadeClassifier
 face_classifier = cv2.CascadeClassifier(
-        cv2.data.haarcascades + "haarcascade_frontalface_extended.xml"
+        cv2.data.haarcascades + "haarcascade_frontalcatface_extended.xml"
 )
 
 face = face_classifier.detectMultiScale(
