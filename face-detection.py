@@ -39,7 +39,7 @@ print(f"{face_image=}")
 
 API_KEY = os.getenv("API_KEY")
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-2.5-pro-exp-03-25")
 result = model.generate_content(
         [face_image, "\n\n", "Can you tell me how many people are there in the photos? Please tell me the number without talking further."]
     )
