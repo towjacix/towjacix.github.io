@@ -34,7 +34,7 @@ else:
 
 
 load_dotenv()
-face_image = genai.upload_file("temp.png")
+face_image = genai.upload_file("temp.jpg")
 print(f"{face_image=}")
 
 API_KEY = os.getenv("API_KEY")
